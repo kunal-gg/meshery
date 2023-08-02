@@ -29,9 +29,9 @@ function FilterCardGridItem({
 }) {
   const [gridProps, setGridProps] = useState(INITIAL_GRID_SIZE);
   const [yaml, setYaml] = useState(yamlConfig);
-
+  console.log(`This is working fine ${gridProps}`)
   return (
-    <Grid item {...gridProps}>
+    <Grid item {...gridProps} md={6}>
       <FiltersCard
         name={filter.name}
         updated_at={filter.updated_at}
